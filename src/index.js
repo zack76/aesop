@@ -6,9 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import products from './reducers/product/reducer'
+import selectedProduct from './reducers/selectedProduct/reducer'
 
 const appReducer = combineReducers({
-    products
+    products,
+    selectedProduct
 })
 const store = createStore(
     appReducer,

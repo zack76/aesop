@@ -4,14 +4,14 @@ import {
 
 export const INITIAL_STATE = [];
 
+const extractProducts = (products) => {
+  return products.categories || [];
+}
 
 const products = (state = INITIAL_STATE, { type, payload }) => {
   switch (type) {
     case IMPORT_PRODUCTS: {
-      return [
-        ...state,
-        payload
-      ];
+      return extractProducts(payload);
     }
     default: return state;
   }

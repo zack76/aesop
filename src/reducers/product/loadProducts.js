@@ -1,6 +1,6 @@
 import { IMPORT_PRODUCTS } from '../../constant'
 
-export const getProducts = (products) => {
+export const loadProducts = (products) => {
     return {
         type: IMPORT_PRODUCTS,
         payload: products

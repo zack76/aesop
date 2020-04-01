@@ -1,3 +1,3 @@
 export const IMPORT_PRODUCTS = "IMPORT_PRODUCTS";
-export const INCOME = 0;
-export const EXPENSE = 1;
+export const SELECT_PRODUCT = "SELECT_PRODUCT";
+export const REMOVE_SELECT_PRODUCT = "REMOVE_SELECT_PRODUCT";
