@@ -28,22 +28,14 @@ const renderVariant = (variant) => {
     var keys = Object.keys(variant)
     var values = Object.values(variant)
     return (
-        <Table striped bordered hover size="sm">
-            <thead>
-            <tr>
-                <th>Variant</th>
-                <th>Value</th>
-            </tr>
-            </thead>
-            <tbody>
+        <div>
             {keys.map((key, index) => (
-                <tr key={key}>
-                    <td>{key}</td>
-                    <td>{typeof values[index] === "boolean" ? values[index].toString() : values[index]}</td>
-                </tr>
+                <div key={key}>
+                    <div><strong className="capitalize">{key}</strong></div><span>{typeof values[index] === "boolean" ? values[index].toString() : values[index]}</span>
+                    <p/>
+                </div>
             ))}
-            </tbody>
-        </Table>
+        </div>
     )
 }
 
