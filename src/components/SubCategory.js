@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Accordion, Card, Button, Col, Row} from "react-bootstrap";
 import Item from "./Item"

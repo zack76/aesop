@@ -7,9 +7,6 @@ import { selectProduct } from '../reducers/selectedProduct/selectProduct';
 
 
 class Item extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const { items } = this.props
@@ -37,6 +34,7 @@ class Item extends Component {
                                     <img className="image-contained"
                                          id={'image-' + product.name}
                                          src={Config.AESOP_URL + (product.thumbnail || product.imageUrl)}
+                                         alt={product.name}
                                     />
                                     <div className="item-desc">
                                         <strong>{product.name}</strong>

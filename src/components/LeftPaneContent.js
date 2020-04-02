@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import {Accordion, Button, Card, Table, Row} from "react-bootstrap";
-import Item from "./Item";
+import React from 'react';
+import {Accordion, Button, Card} from "react-bootstrap";
 
 const renderVariants = (variants) => {
     return variants.map(variant => {
