@@ -1,5 +1,5 @@
-import { loadProducts } from '../../../src/reducers/product/loadProducts';
-import { IMPORT_PRODUCTS } from '../../../src/constant'
+import { loadProducts }  from '../../../../reducers/product/loadProducts';
+import {IMPORT_PRODUCTS} from '../../../../constant'
 
 test('loadProducts', () => {
     expect(loadProducts('item').payload).toBe('item');

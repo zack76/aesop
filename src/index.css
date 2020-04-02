@@ -66,3 +66,14 @@
 .capitalize {
     text-transform: capitalize;
 }
+.panel {
+    background: white;
+    height: 100vh;
+    width: 50vw !important;
+    padding: 10px;
+}
+.panel-content  {
+    background: white;
+    height: 100vh;
+    width: 50vw;
+}

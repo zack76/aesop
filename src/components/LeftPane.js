@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Modal from 'react-modal';
-import SlidingPane from 'react-sliding-pane';
+import SlidingPanel from 'react-sliding-side-panel';
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 import { removeSelectProduct } from "../reducers/selectedProduct/removeSelectProduct";
-import LeftPaneContent from "../components/LeftPaneContent"
+import LeftPaneContent from "../components/LeftPaneContent";
+import FontAwesome from 'react-fontawesome';
 
 class LeftPane extends Component {
     constructor(props) {
@@ -23,17 +24,17 @@ class LeftPane extends Component {
     render() {
         const { selectedProduct } = this.props;
         return (
-                <SlidingPane
-                    className='some-custom-class'
-                    overlayClassName='some-custom-overlay-class'
-                    isOpen={selectedProduct !== null && selectedProduct !== undefined}
-                    title={'Variants' }
-                    from='left'
-                    onRequestClose={ () => {
-                        this.props.removeSelectProduct();
-                    } }>
-                    <LeftPaneContent product={selectedProduct} />
-                </SlidingPane>
+            <SlidingPanel
+                type={'left'}
+                isOpen={selectedProduct !== null && selectedProduct !== undefined}
+                size={30}
+                className="left-pane"
+            >
+                <div className="btn" onClick={() => {this.props.removeSelectProduct()}}>
+                    <FontAwesome name="times" size="2x"/>
+                </div>
+                <LeftPaneContent product={selectedProduct} />
+            </SlidingPanel>
         );
     }
 }

@@ -1,5 +1,5 @@
-import  selectedProduct  from '../../../src/reducers/selectedProduct/reducer';
-import {REMOVE_SELECT_PRODUCT, SELECT_PRODUCT} from '../../../src/constant'
+import  selectedProduct  from '../../../../reducers/selectedProduct/reducer';
+import {REMOVE_SELECT_PRODUCT, SELECT_PRODUCT} from '../../../../constant'
 
 describe('selectedProduct', () => {
     test('SELECT_PRODUCT', () => {

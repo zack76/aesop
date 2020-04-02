@@ -1,5 +1,5 @@
-import  products  from '../../../src/reducers/product/reducer';
-import {IMPORT_PRODUCTS} from '../../../src/constant'
+import  products  from '../../../../reducers/product/reducer';
+import {IMPORT_PRODUCTS} from '../../../../constant'
 
 describe('IMPORT_PRODUCTS', () => {
     test('with items', () => {
@@ -15,7 +15,7 @@ describe('IMPORT_PRODUCTS', () => {
         const params = {
             type: IMPORT_PRODUCTS,
             payload: {
-                 items: 'items'
+                items: 'items'
             }
         }
         expect(products([], params)).toEqual([]);

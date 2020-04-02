@@ -1,5 +1,6 @@
-import { selectProduct } from '../../../src/reducers/selectedProduct/selectProduct';
-import { SELECT_PRODUCT } from '../../../src/constant'
+import { selectProduct }  from '../../../../reducers/selectedProduct/selectProduct';
+import {SELECT_PRODUCT} from '../../../../constant'
+
 
 test('selectProduct', () => {
     expect(selectProduct('item').payload).toBe('item');
