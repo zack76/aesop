@@ -1,0 +1,560 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList Should render without error 1`] = `
+<ProductList
+  products={
+    Array [
+      Object {
+        "items": Array [
+          "a",
+          "b",
+          "c",
+        ],
+        "name": "toy",
+      },
+      Object {
+        "items": Array [
+          "one",
+          "two",
+          "three",
+        ],
+        "name": "paper",
+      },
+      Object {
+        "items": Array [
+          "apple",
+          "pear",
+          "orange",
+        ],
+        "name": "food",
+      },
+    ]
+  }
+>
+  <ForwardRef
+    defaultActiveKey="0"
+    key="0"
+  >
+    <div
+      className="accordion"
+    >
+      <Card
+        body={false}
+      >
+        <div
+          className="card"
+        >
+          <CardHeader>
+            <div
+              className="card-header"
+            >
+              <ForwardRef
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "active": false,
+                      "disabled": false,
+                      "type": "button",
+                      "variant": "primary",
+                    },
+                    "displayName": "Button",
+                    "render": [Function],
+                  }
+                }
+                eventKey="category0"
+                variant="link"
+              >
+                <Button
+                  active={false}
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                  variant="link"
+                >
+                  <button
+                    className="btn btn-link"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    toy
+                  </button>
+                </Button>
+              </ForwardRef>
+            </div>
+          </CardHeader>
+          <AccordionCollapse
+            eventKey="category0"
+          >
+            <Collapse
+              appear={false}
+              dimension="height"
+              getDimensionValue={[Function]}
+              in={false}
+              mountOnEnter={false}
+              timeout={300}
+              unmountOnExit={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={false}
+                aria-expanded={null}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <div
+                  aria-expanded={null}
+                  className="collapse"
+                >
+                  <CardBody>
+                    <div
+                      className="card-body"
+                    >
+                      <sub-category
+                        subcategories={
+                          Array [
+                            "a",
+                            "b",
+                            "c",
+                          ]
+                        }
+                      />
+                    </div>
+                  </CardBody>
+                </div>
+              </Transition>
+            </Collapse>
+          </AccordionCollapse>
+        </div>
+      </Card>
+    </div>
+  </ForwardRef>
+  <ForwardRef
+    defaultActiveKey="0"
+    key="1"
+  >
+    <div
+      className="accordion"
+    >
+      <Card
+        body={false}
+      >
+        <div
+          className="card"
+        >
+          <CardHeader>
+            <div
+              className="card-header"
+            >
+              <ForwardRef
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "active": false,
+                      "disabled": false,
+                      "type": "button",
+                      "variant": "primary",
+                    },
+                    "displayName": "Button",
+                    "render": [Function],
+                  }
+                }
+                eventKey="category1"
+                variant="link"
+              >
+                <Button
+                  active={false}
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                  variant="link"
+                >
+                  <button
+                    className="btn btn-link"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    paper
+                  </button>
+                </Button>
+              </ForwardRef>
+            </div>
+          </CardHeader>
+          <AccordionCollapse
+            eventKey="category1"
+          >
+            <Collapse
+              appear={false}
+              dimension="height"
+              getDimensionValue={[Function]}
+              in={false}
+              mountOnEnter={false}
+              timeout={300}
+              unmountOnExit={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={false}
+                aria-expanded={null}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <div
+                  aria-expanded={null}
+                  className="collapse"
+                >
+                  <CardBody>
+                    <div
+                      className="card-body"
+                    >
+                      <sub-category
+                        subcategories={
+                          Array [
+                            "one",
+                            "two",
+                            "three",
+                          ]
+                        }
+                      />
+                    </div>
+                  </CardBody>
+                </div>
+              </Transition>
+            </Collapse>
+          </AccordionCollapse>
+        </div>
+      </Card>
+    </div>
+  </ForwardRef>
+  <ForwardRef
+    defaultActiveKey="0"
+    key="2"
+  >
+    <div
+      className="accordion"
+    >
+      <Card
+        body={false}
+      >
+        <div
+          className="card"
+        >
+          <CardHeader>
+            <div
+              className="card-header"
+            >
+              <ForwardRef
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "active": false,
+                      "disabled": false,
+                      "type": "button",
+                      "variant": "primary",
+                    },
+                    "displayName": "Button",
+                    "render": [Function],
+                  }
+                }
+                eventKey="category2"
+                variant="link"
+              >
+                <Button
+                  active={false}
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                  variant="link"
+                >
+                  <button
+                    className="btn btn-link"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    food
+                  </button>
+                </Button>
+              </ForwardRef>
+            </div>
+          </CardHeader>
+          <AccordionCollapse
+            eventKey="category2"
+          >
+            <Collapse
+              appear={false}
+              dimension="height"
+              getDimensionValue={[Function]}
+              in={false}
+              mountOnEnter={false}
+              timeout={300}
+              unmountOnExit={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={false}
+                aria-expanded={null}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <div
+                  aria-expanded={null}
+                  className="collapse"
+                >
+                  <CardBody>
+                    <div
+                      className="card-body"
+                    >
+                      <sub-category
+                        subcategories={
+                          Array [
+                            "apple",
+                            "pear",
+                            "orange",
+                          ]
+                        }
+                      />
+                    </div>
+                  </CardBody>
+                </div>
+              </Transition>
+            </Collapse>
+          </AccordionCollapse>
+        </div>
+      </Card>
+    </div>
+  </ForwardRef>
+</ProductList>
+`;
+
+exports[`SubCategory Should render without error 1`] = `
+<SubCategory
+  subcategories={
+    Array [
+      Object {
+        "items": Array [
+          Object {
+            "name": 1,
+            "price": 2,
+            "variants": Array [
+              Object {
+                "a": 1,
+                "b": 2,
+              },
+            ],
+          },
+          Object {
+            "name": 2,
+            "price": 2,
+            "variants": Array [
+              Object {
+                "a": 1,
+                "b": 2,
+              },
+            ],
+          },
+          Object {
+            "name": 3,
+            "price": 2,
+            "variants": Array [
+              Object {
+                "a": 1,
+                "b": 2,
+              },
+            ],
+          },
+        ],
+        "name": "toy",
+      },
+    ]
+  }
+>
+  <ForwardRef
+    defaultActiveKey="0"
+    key="toy0"
+  >
+    <div
+      className="accordion"
+    >
+      <Card
+        body={false}
+      >
+        <div
+          className="card"
+        >
+          <CardHeader>
+            <div
+              className="card-header"
+            >
+              <ForwardRef
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "active": false,
+                      "disabled": false,
+                      "type": "button",
+                      "variant": "primary",
+                    },
+                    "displayName": "Button",
+                    "render": [Function],
+                  }
+                }
+                eventKey="subcategorytoy0"
+                variant="link"
+              >
+                <Button
+                  active={false}
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                  variant="link"
+                >
+                  <button
+                    className="btn btn-link"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    toy
+                  </button>
+                </Button>
+              </ForwardRef>
+            </div>
+          </CardHeader>
+          <AccordionCollapse
+            eventKey="subcategorytoy0"
+          >
+            <Collapse
+              appear={false}
+              dimension="height"
+              getDimensionValue={[Function]}
+              in={false}
+              mountOnEnter={false}
+              timeout={300}
+              unmountOnExit={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={false}
+                aria-expanded={null}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <div
+                  aria-expanded={null}
+                  className="collapse"
+                >
+                  <CardBody>
+                    <div
+                      className="card-body"
+                    >
+                      <Col
+                        key="toy0"
+                        xs={12}
+                      >
+                        <div
+                          className="col-12"
+                        >
+                          <Row
+                            noGutters={false}
+                          >
+                            <div
+                              className="row"
+                            >
+                              <item-list
+                                items={
+                                  Array [
+                                    Object {
+                                      "name": 1,
+                                      "price": 2,
+                                      "variants": Array [
+                                        Object {
+                                          "a": 1,
+                                          "b": 2,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "name": 2,
+                                      "price": 2,
+                                      "variants": Array [
+                                        Object {
+                                          "a": 1,
+                                          "b": 2,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "name": 3,
+                                      "price": 2,
+                                      "variants": Array [
+                                        Object {
+                                          "a": 1,
+                                          "b": 2,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </div>
+                          </Row>
+                        </div>
+                      </Col>
+                    </div>
+                  </CardBody>
+                </div>
+              </Transition>
+            </Collapse>
+          </AccordionCollapse>
+        </div>
+      </Card>
+    </div>
+  </ForwardRef>
+</SubCategory>
+`;

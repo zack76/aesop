@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render without error 1`] = `
+<nav
+  className="navbar navbar-light bg-light text-center"
+>
+  <a
+    className="navbar-brand"
+    href="/#"
+  >
+    Aesop
+  </a>
+</nav>
+`;
+
+exports[`NavBar should render without error 1`] = `
+<nav
+  className="navbar navbar-light bg-light text-center"
+>
+  <a
+    className="navbar-brand"
+    href="/#"
+  >
+    Aesop
+  </a>
+</nav>
+`;

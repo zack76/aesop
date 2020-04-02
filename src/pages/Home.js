@@ -5,7 +5,6 @@ import { selectProduct } from '../reducers/selectedProduct/selectProduct';
 import ItemService from '../service/ItemService'
 import NavBar from '../components/NavBar'
 import ProductList from '../components/ProductList'
-import Modal from 'react-modal';
 import LeftPane from '../components/LeftPane'
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 import {AESOP_DATA} from '../constant'
@@ -18,7 +17,6 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        Modal.setAppElement(this.el);
         this.props.loadProducts(AESOP_DATA)
         // ItemService.getItemDetail()
         //     .then(res => res.json())
