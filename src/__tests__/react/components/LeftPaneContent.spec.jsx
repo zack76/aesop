@@ -13,19 +13,9 @@ describe('LeftPaneContent', () => {
         const wrapper = mount(<LeftPaneContent {...props} />);
         expect(wrapper.find(Accordion).length).toEqual(2);
         expect(wrapper.find(Accordion.Toggle).first().text()).toEqual('a');
-        expect(wrapper.find(Accordion.Collapse).first().prop('eventKey')).toEqual('varianta');
+        expect(wrapper.find(Accordion.Collapse).first().prop('eventKey')).toEqual('variant0');
     })
 
-    it('Should render key with sku without error', () => {
-        const props = {
-            product: { name: 'toy', variants: [{sku: 'sku', 'B': 'b'}, {sku: 'b', 'B': '2b'}] },
-        };
-        const wrapper = mount(<LeftPaneContent {...props} />);
-        expect(wrapper.find(Accordion).length).toEqual(2);
-        expect(wrapper.find(Accordion.Toggle).first().text()).toEqual('sku');
-        expect(wrapper.find(Accordion.Collapse).first().prop('eventKey')).toEqual('variantsku');
-
-    })
 
     it('Should render key with variant is boolean without error', () => {
         const props = {

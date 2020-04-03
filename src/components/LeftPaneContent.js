@@ -12,7 +12,7 @@ const renderVariants = (variants) => {
                             {variant.name || variant.sku}
                         </Accordion.Toggle>
                     </Card.Header>
-                    <Accordion.Collapse eventKey={'variant' + (variant.name || variant.sku)}>
+                    <Accordion.Collapse eventKey={'variant' + index}>
                         <Card.Body>
                             {renderVariant(variant)}
                         </Card.Body>
