@@ -50,6 +50,8 @@
       "enzyme-to-json/serializer"
     ],
     "collectCoverageFrom": [
+      "src/pages/**/*.{js,jsx}",
+      "src/components/**/*.{js,jsx}",
       "src/reducers/**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/vendor/**"

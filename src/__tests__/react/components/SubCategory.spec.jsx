@@ -32,6 +32,23 @@ describe('SubCategory', () => {
         ).toEqual(1);
     })
 
+    it('Should render item with no price without error', () => {
+        const props = {
+            subcategories: [
+                { name: 'toy', items: [
+                        { name: 'toy', items: [
+                                { name: 1, price: 2, variants: [ {a:1, b: 2}]},
+                                { name: 2, price: 2, variants: [ {a:1, b: 2}]},
+                                { name: 3, price: 2, variants: [ {a:1, b: 2}]}
+                            ] }
+                    ] },
+            ]
+        };
+        const wrapper = mount(<SubCategory {...props} />);
+        expect(wrapper).toMatchSnapshot()
+        expect(wrapper.find(Accordion).length).toEqual(2);
+    })
+
     it('Should have Accordion.Toggle with "as" is Button', () => {
         const wrapper = shallow(<SubCategory {...props} />);
         expect(
@@ -40,5 +57,6 @@ describe('SubCategory', () => {
                 .first()
                 .prop('as')
         ).toBe(Button);
+        expect(wrapper).toMatchSnapshot();
     });
 });

@@ -6,7 +6,7 @@ import { removeSelectProduct } from "../reducers/selectedProduct/removeSelectPro
 import LeftPaneContent from "../components/LeftPaneContent";
 import FontAwesome from 'react-fontawesome';
 
-const LeftPane = ({selectedProduct, removeSelectProduct}) => (
+export const LeftPane = ({selectedProduct, removeSelectProduct}) => (
     <SlidingPanel
         type={'left'}
         isOpen={selectedProduct !== null && selectedProduct !== undefined}
@@ -23,7 +23,7 @@ const LeftPane = ({selectedProduct, removeSelectProduct}) => (
 )
 
 
-const mapStateToProps = ({ products, selectedProduct }) => {
+export const mapStateToProps = ({ products, selectedProduct }) => {
     return {
         products: products,
         selectedProduct: selectedProduct

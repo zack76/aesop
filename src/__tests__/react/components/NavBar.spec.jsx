@@ -12,5 +12,6 @@ describe('NavBar', () => {
         const wrapper = shallow(<NavBar />);
         expect(wrapper.find('a').length).toBe(1);
         expect(wrapper.find('nav').length).toBe(1);
+        expect(wrapper).toMatchSnapshot();
     });
 });

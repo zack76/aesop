@@ -40,5 +40,6 @@ describe('ProductList', () => {
                 .first()
                 .prop('as')
         ).toBe(Button);
+        expect(wrapper).toMatchSnapshot();
     });
 });
