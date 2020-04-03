@@ -2,17 +2,17 @@ import React from 'react';
 import {Accordion, Button, Card} from "react-bootstrap";
 
 const renderVariants = (variants) => {
-    return variants.map(variant => {
+    return variants.map((variant, index) => {
         return (
-            <Accordion key={variant.name || variant.sku} defaultActiveKey="0">
+            <Accordion key={index} defaultActiveKey="0">
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Button} variant="link"
-                                          eventKey={'variant' + variant.name || variant.sku}>
+                                          eventKey={'variant' + index}>
                             {variant.name || variant.sku}
                         </Accordion.Toggle>
                     </Card.Header>
-                    <Accordion.Collapse eventKey={'variant' + variant.name || variant.sku}>
+                    <Accordion.Collapse eventKey={'variant' + (variant.name || variant.sku)}>
                         <Card.Body>
                             {renderVariant(variant)}
                         </Card.Body>

@@ -9,7 +9,7 @@ import LeftPane from '../components/LeftPane'
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 import {AESOP_DATA} from '../constant'
 
-class Home extends Component {
+export class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,7 +29,7 @@ class Home extends Component {
     render() {
         const { products, selectedProduct } = this.props;
         return (
-            <div ref={ref => this.el = ref}>
+            <div>
                 <div className="App">
                     <div className="container">
                         <NavBar />
@@ -42,7 +42,7 @@ class Home extends Component {
     }
 }
 
-const mapStateToProps = ({ products, selectedProduct }) => {
+export const mapStateToProps = ({ products, selectedProduct }) => {
     return {
         products: products,
         selectedProduct: selectedProduct

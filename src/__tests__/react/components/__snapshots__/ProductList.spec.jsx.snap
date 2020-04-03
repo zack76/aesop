@@ -1,16 +1,143 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBar should render without error 1`] = `
-<nav
-  className="navbar navbar-light bg-light text-center"
->
-  <a
-    className="navbar-brand"
-    href="/#"
+exports[`ProductList Should have Accordion.Toggle with "as" is Button 1`] = `
+Array [
+  <ForwardRef
+    defaultActiveKey="0"
+    key="0"
   >
-    Aesop
-  </a>
-</nav>
+    <Card
+      body={false}
+    >
+      <CardHeader>
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "active": false,
+                "disabled": false,
+                "type": "button",
+                "variant": "primary",
+              },
+              "displayName": "Button",
+              "render": [Function],
+            }
+          }
+          eventKey="category0"
+          variant="link"
+        >
+          toy
+        </ForwardRef>
+      </CardHeader>
+      <AccordionCollapse
+        eventKey="category0"
+      >
+        <CardBody>
+          <sub-category
+            subcategories={
+              Array [
+                "a",
+                "b",
+                "c",
+              ]
+            }
+          />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+  </ForwardRef>,
+  <ForwardRef
+    defaultActiveKey="0"
+    key="1"
+  >
+    <Card
+      body={false}
+    >
+      <CardHeader>
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "active": false,
+                "disabled": false,
+                "type": "button",
+                "variant": "primary",
+              },
+              "displayName": "Button",
+              "render": [Function],
+            }
+          }
+          eventKey="category1"
+          variant="link"
+        >
+          paper
+        </ForwardRef>
+      </CardHeader>
+      <AccordionCollapse
+        eventKey="category1"
+      >
+        <CardBody>
+          <sub-category
+            subcategories={
+              Array [
+                "one",
+                "two",
+                "three",
+              ]
+            }
+          />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+  </ForwardRef>,
+  <ForwardRef
+    defaultActiveKey="0"
+    key="2"
+  >
+    <Card
+      body={false}
+    >
+      <CardHeader>
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "active": false,
+                "disabled": false,
+                "type": "button",
+                "variant": "primary",
+              },
+              "displayName": "Button",
+              "render": [Function],
+            }
+          }
+          eventKey="category2"
+          variant="link"
+        >
+          food
+        </ForwardRef>
+      </CardHeader>
+      <AccordionCollapse
+        eventKey="category2"
+      >
+        <CardBody>
+          <sub-category
+            subcategories={
+              Array [
+                "apple",
+                "pear",
+                "orange",
+              ]
+            }
+          />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+  </ForwardRef>,
+]
 `;
 
 exports[`ProductList Should render without error 1`] = `

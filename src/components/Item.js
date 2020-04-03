@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { selectProduct } from '../reducers/selectedProduct/selectProduct';
 
 
-class Item extends Component {
+export class Item extends Component {
 
     render() {
         const { items } = this.props
@@ -51,7 +51,7 @@ class Item extends Component {
     }
 }
 
-const mapStateToProps = ({ selectedProduct }) => {
+export const mapStateToProps = ({ selectedProduct }) => {
     return {
         selectedProduct: selectedProduct
     }
