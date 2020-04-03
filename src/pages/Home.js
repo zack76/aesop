@@ -17,12 +17,12 @@ export class Home extends Component {
     }
 
     componentDidMount() {
-        this.props.loadProducts(AESOP_DATA)
-        // ItemService.getItemDetail()
-        //     .then(res => res.json())
-        //     .then(resp => {
-        //         this.props.loadProducts(resp)
-        //     })
+        // this.props.loadProducts(AESOP_DATA)
+        ItemService.getItemDetail()
+            .then(res => res.json())
+            .then(resp => {
+                this.props.loadProducts(resp)
+            })
     }
 
 

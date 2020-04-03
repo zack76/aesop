@@ -1,10 +1,12 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Home, mapStateToProps } from '../../../pages/Home'
+import ItemService from '../../../service/ItemService'
 
 jest.mock('../../../components/NavBar', () => 'nav-bar')
 jest.mock('../../../components/ProductList', () => 'product-list')
 jest.mock('../../../components/LeftPane', () => 'left-pane')
+ItemService.getItemDetail = () => Promise.resolve({ json: () => [] });
 
 describe('Home', () => {
     const props = {
@@ -25,6 +27,5 @@ describe('Home', () => {
         expect(wrapper.find('left-pane').length).toEqual(1);
         expect(mapStateToProps(initialState).products).toEqual('products');
         expect(mapStateToProps(initialState).selectedProduct).toEqual('selectedProduct');
-        expect(wrapper).toMatchSnapshot();
     })
 });
