@@ -4,6 +4,8 @@ class BaseService {
             method: 'GET',
             headers: {
                 'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST,GET,PUT,DELETE',
+                'Access-Control-Allow-Headers': 'Authorization, Lang',
             }
         });
     }
