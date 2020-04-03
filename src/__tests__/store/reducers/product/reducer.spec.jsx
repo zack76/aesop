@@ -9,15 +9,22 @@ describe('IMPORT_PRODUCTS', () => {
                 categories: 'items'
             }
         }
-        expect(products([], params)).toBe('items');
+        expect(products(undefined, params)).toBe('items');
     });
     test('without items', () => {
         const params = {
             type: IMPORT_PRODUCTS,
             payload: {
-                items: 'items'
             }
         }
-        expect(products([], params)).toEqual([]);
+        expect(products(undefined, params)).toEqual([]);
+    });
+    test('without default type', () => {
+        const params = {
+            type: 'default',
+            payload: {
+            }
+        }
+        expect(products(undefined, params)).toEqual([]);
     });
 });

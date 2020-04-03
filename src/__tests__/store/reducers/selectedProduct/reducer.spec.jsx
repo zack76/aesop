@@ -7,13 +7,22 @@ describe('selectedProduct', () => {
             type: SELECT_PRODUCT,
             payload: 'item'
         }
-        expect(selectedProduct([], params)).toBe('item');
+        expect(selectedProduct(undefined, params)).toBe('item');
     });
 
     test('SELECT_PRODUCT', () => {
         const params = {
             type: REMOVE_SELECT_PRODUCT,
+            payload: 'item'
         }
-        expect(selectedProduct([], params)).toBeNull();
+        expect(selectedProduct(undefined, params)).toBeNull();
+    });
+
+    test('without default type', () => {
+        const params = {
+            type: 'default',
+            payload: 'item'
+        }
+        expect(selectedProduct(undefined, params)).toBeNull();
     });
 });
