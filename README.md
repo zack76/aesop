@@ -1,4 +1,4 @@
-# Aesop Test Project
+#Test Project
 (using react, redux)
 
 Step 1:
@@ -21,12 +21,12 @@ Step 3:
     
 ### **Notes:**
 
-The endpoint of this project('https://www.aesop.com/au/api/v1/nav/shop/') has been blocked due to CORS policy, which means the server might need to set a header to solve this issue.
+The endpoint of this project(the endpoint) has been blocked due to CORS policy, which means the server might need to set a header to solve this issue.
 The whole project is built base on the data from Postman using the same endpoint, and cors-anywhere (forbidden sometimes).
 
 
 
 #####Error Message:
 
-Access to fetch at 'https://www.aesop.com/au/api/v1/nav/shop/' from origin 'http://localhost:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+Access to fetch at 'endpoint' from origin 'http://localhost:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
     
