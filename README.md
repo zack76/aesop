@@ -1,5 +1,4 @@
-TODO:
-1. Fix tests regarding react hook
+PRIVATE USE
 
 #Test Project
 (using react, redux)
